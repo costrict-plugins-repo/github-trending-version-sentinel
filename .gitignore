@@ -1,0 +1,81 @@
+.playwright-mcp
+
+# Isolated development checkouts
+.worktrees/
+
+# .NET build artifacts (esp. under tests/fixtures/Demo.csproj)
+**/obj/
+tests/fixtures/**/bin/
+tests/fixtures/**/Debug/
+tests/fixtures/**/Release/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+*.egg
+
+# Test coverage
+.coverage
+htmlcov/
+coverage.xml
+*.lcov
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editor temp files
+*~
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
+
+# IDE
+.vs/
+.idea/
+*.user
+.vscode/
+
+# OS
+.DS_Store
+**/.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Sidecar state for any repo cd'd into during testing
+.version-sentinel/
+
+# Local-only design docs / plans (kept out of GitHub)
+docs/superpowers/
+
+# Website verification artifacts
+site/reports/
+site/.lighthouseci/
